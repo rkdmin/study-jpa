@@ -23,6 +23,7 @@ public class Order {
 
     private LocalDate orderDate;
 
+    @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
 
     @ManyToOne
