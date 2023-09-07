@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn
-public class Item {
+public class Item extends BaseEntity {
 
     @Id
     @Column(name = "item_id")
